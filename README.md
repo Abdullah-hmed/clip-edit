@@ -2,6 +2,12 @@ A GUI application that leverages CLIP and StyleGAN2 models to generate and seman
 
 ## Installation
 
+Clone the repository:
+
+```bash
+git clone --recurse-submodules https://github.com/Abdullah-hmed/clip-edit.git
+```
+
 Create a virtual environment:
 
 ```bash
