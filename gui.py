@@ -398,9 +398,11 @@ class StyleGANEditor:
             plt.tight_layout()
             
             # Save with timestamp
+            os.makedirs("comparisons", exist_ok=True)
+
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"comparisons/comparison_{timestamp}.png"
-            plt.savefig(filename, dpi=150, bbox_inches='tight')
+            filename = f"comparison_{timestamp}.png"
+            plt.savefig(f"comparisons/{filename}", dpi=150, bbox_inches='tight')
             plt.close()
             
             self.progress_label.config(text=f"Saved as {filename}!")
