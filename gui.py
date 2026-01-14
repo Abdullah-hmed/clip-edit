@@ -399,7 +399,7 @@ class StyleGANEditor:
             
             # Save with timestamp
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"comparison_{timestamp}.png"
+            filename = f"comparisons/comparison_{timestamp}.png"
             plt.savefig(filename, dpi=150, bbox_inches='tight')
             plt.close()
             
